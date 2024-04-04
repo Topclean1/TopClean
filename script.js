@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const interval = 5000;
     let slides = document.querySelectorAll('.slides img');
     const services = document.querySelectorAll('.service');
-    const divstoobserve = document.querySelectorAll(".animate")
     const callback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -24,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
             
         });
     };
+
     const observer = new IntersectionObserver(callback, {threshold: 0.1});
     services.forEach(service => {
         observer.observe(service);  
     });
-    divstoobserve.forEach(div => {
-        observer.observe(div);  
-    });
+   
+    
    
 
  navbarButton.addEventListener('click', function () {
@@ -84,9 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
         
         
     });
-    sections.forEach(section => {
-        observer.observe(section);
-    });
     const questions = document.querySelectorAll('.question');
 
     questions.forEach(question => {
@@ -94,8 +90,5 @@ document.addEventListener('DOMContentLoaded', function () {
             question.classList.toggle('open');
         });
     });
-    showSlide(slideIndex);
-    
-    let timer = setInterval(nextSlide, interval); // Start the automatic slideshow
        
 });

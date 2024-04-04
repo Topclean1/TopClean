@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <script src="script.js"></script>
     <div class="topContainer">
 
@@ -20,7 +21,7 @@
     <div class="header">
 
         <div class="navContainer">
-            <div><img class="navLogo" src="resources/imgs/besen.png" alt=""></div>
+            <div><img class="navLogo" src="resources/imgs/cleaning-mop-svgrepo-com.svg" alt=""></div>
             <div>
                 <h3>TopClean</h3>
             </div>
@@ -48,7 +49,7 @@
             <h3 class="box"><a href="#contact">Jetzt bei TopClean anfragen!</a></h3>
         </div>
         <div class="introImg">
-            <img id="introImg" src="resources/imgs/intro1.jpg" alt="">
+            <img id="introImg" src="resources/imgs/intro1.webp" alt="">
         </div>
     </div>
     <div class="intro test desktop">
@@ -58,7 +59,7 @@
             <h3 class="box"><a href="#contact">Jetzt bei TopClean anfragen!</a></h3>
         </div>
         <div class="introImg">
-            <img id="introImg" src="resources/imgs/bild.jpg" alt="">
+            <img id="introImg" src="resources/imgs/bild.webp" alt="">
         </div>
     </div>
 
@@ -115,7 +116,7 @@
             </div>
             <div class="service service2 test">
                 <img src="resources/imgs/office.jpg" alt="">
-                <h3 class="centerText">Büro/Arbeitsplatzreinigung</h4>
+                <h3 class="centerText">Büro/Arbeitsplatz- <br>reinigung</h4>
             </div>
         </div>
         <div class="box3">
@@ -139,7 +140,7 @@
 
     <!-- Contact Section -->
     <div class="section" id="contact" style="padding: 20px;">
-        <div class="anfrageBox animate">
+        <div class="anfrageBox animateUp">
             <h3><b>Reinigungsanfrage</b> jetzt! <br> <br>
 
 
@@ -157,52 +158,24 @@
 
 
     </div>
-    <section id="contact">
-        <div class="container1">
-            <form id="contactForm" action="#" method="post">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="number">Telefonnummer:</label>
-                        <input type="tel" id="number" name="number" required>
-                    </div>
-                    <div>
-                        <label for="service">Reinigunsart:</label>
-                        <select id="service" name="service" required>
-                            <b><option value="" disabled selected><b>Reinigunsart auswählen</b></option></b>
-                            <option value="General Inquiry">Gebäudereinigung</option>
-                            <option value="Support">Allgemeinreinigung</option>
-                            <option value="Feedback">Büro/Arbeitsplatzreiniung</option>
-                            <option value="Oberflächenreinigung">Oberflächenreinigung</option>
-                            <option value="Other">Sonstiges</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="message">Ihre Nachricht:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="agree" name="agree" required>
-                        <label for="agree">Ich habe die <b><a id="termsLink">AGBs</a></b> gelesen und akzeptiert.</label>
-                    </div>
-                    <div>
-                        <button type="submit">Anfrage schicken</button>
-                    </div>
-                </form>
-            </form>
-            
+    <section id="contact" >
+        <div style="text-align: center; display: block" class="container1">
+            <div>
+                <h3>Schicken Sie uns jetzt eine E-Mail, um ein personalisiertes Angebot zu erhalten!</h3>
+
+            </div>
+            <div  style="width: fit-content; height: fit-content; position: relative; left: 50%; transform: translateX(-50%);">
+                <a class="emailBtn box" style="color: black;  text-decoration: none; padding: 0%; margin: 0%;" href="mailto:info@topclean.at">
+                    <div style="height: fit-content;"><img class="emailImg" src="resources/imgs/email-svgrepo-com.svg" alt=""></div>
+                    <div style="height: fit-content;"><h3 style="font-size: xx-large;">Email</h3></div>
+                </a>
+            </div>
         </div>
     </section>
-    
+
     <div id="overlay"></div>
     <div id="termsPopup">
-        <span onclick="closeTermsPopup()"  class="close">&times;</span>
+        <span onclick="closeTermsPopup()" class="close">&times;</span>
         <h3>Terms and Conditions</h3>
         <p> <b>Willkommen bei Top Clean!</b> <br> <br>
             <b>§ 1 Geltungsbereich und Anbieter</b><br> <br>
@@ -227,26 +200,27 @@
             4. Mit der Anmeldung entsteht ein Vertragsverhältnis zwischen Top Clean und dem angemeldeten
             Besteller, das sich nach den Regelungen dieser AGB richtet. <br> <br>
             5. Die Präsentation der Dienstleistung auf der Website stellt kein rechtlich wirksames Angebot dar. Durch
-            die Präsentation der Dienstleistung wird der Kunde lediglich dazu aufgefordert ein Angebot zu machen. <br> <br>
+            die Präsentation der Dienstleistung wird der Kunde lediglich dazu aufgefordert ein Angebot zu machen. <br>
+            <br>
             6. Mit Bestellung eines kostenpflichtigen Dienstes geht der angemeldete Besteller ein weiteres, von der
             Anmeldung getrenntes Vertragsverhältnis mit Top Clean ein. Der Nutzer wird vor Abschluss dieses
             Vertragsverhältnisses über den jeweiligen kostenpflichtigen Dienst und die Zahlungsbedingungen
             informiert. <br> <br>
-            <b>§ 3 Beschreibung des Leistungsumfanges</b>  <br> <br>
+            <b>§ 3 Beschreibung des Leistungsumfanges</b> <br> <br>
             Der Leistungsumfang von Top Clean besteht ausfolgenden Dienstleistungen: <br> <br>
             Allgemeine Reinigung <br> <br>
             Küchenreinigung <br> <br>
             Oberflächenreinigung <br> <br>
             Büro/Arbeitsplatzreinigung <br> <br>
-            <b>§ 4 Preise und Versandkosten</b>  <br> <br>
+            <b>§ 4 Preise und Versandkosten</b> <br> <br>
             1. Sofern der Nutzer einen kostenpflichtigen Dienst in Anspruch nehmen möchte, wird er vorher auf die
             Kostenpflichtigkeit hingewiesen. So werden ihm insbesondere der jeweilige zusätzliche
             Leistungsumfang, die anfallenden Kosten und die
-            Zahlungsweise aufgeführt. <br> <br>  
+            Zahlungsweise aufgeführt. <br> <br>
             2. Der Anbieter behält sich das Recht vor, für verschiedene Buchungszeitpunkte und Nutzergruppen und
             insbesondere für verschiedene Nutzungszeiträume unterschiedliche Entgeltmodelle zu berechnen, wie
-            auch verschiedene Leistungsumfänge anzubieten. <br> <br>                               
-            <b>§ 5 Zahlungsbedingungen</b>  <br> <br>
+            auch verschiedene Leistungsumfänge anzubieten. <br> <br>
+            <b>§ 5 Zahlungsbedingungen</b> <br> <br>
             (1) Ein anfallendes Entgelt ist im Voraus, zum Zeitpunkt der Fälligkeit ohne Abzug an
             Top Clean zu entrichten. <br> <br>
             (2) Bestimmte Zahlungsarten können im Einzelfall von dem Anbieter ausgeschlossen werden.
@@ -272,7 +246,7 @@
             Verzugschadens vor. <br> <br>
             (9) Die Abwicklung kann über folgende Zahlungsmittel erfolgen: <br> <br>
             - Sofortüberweisung <br> <br>
-            <b>§ 6 Kündigung</b>  <br> <br>
+            <b>§ 6 Kündigung</b> <br> <br>
             1. Weiterhin erklärt der Besteller, dass er und nach seiner Kenntnis auch kein Mitglied seines Haushaltes
             nicht wegen einer vorsätzlichen Straftat die die Sicherheit von Dritten gefährdet vorbestraft ist,
             insbesondere nicht wegen einer Straftat gegen die sexuelle Selbstbestimmung (SS 174 ff. StGB, einer
@@ -309,7 +283,7 @@
             betrügerischen Falschangaben zu machen. Solche Angaben können zivilrechtliche Schritte nach sich
             ziehen. Der Betreiber behält sich darüber hinaus das Recht vor, in einem solchen Fall das bestehende
             Vertragsverhältnis mit sofortiger Wirkung aufzulösen. <br> <br>
-            <b>§ 7 Haftungsbegrenzung (Dienstleistungen)</b>  <br> <br>
+            <b>§ 7 Haftungsbegrenzung (Dienstleistungen)</b> <br> <br>
             (1) Top Clean übernimmt keine Verantwortung für den Inhalt und die Richtigkeit der Angaben in den Anmeldeund
             Profildaten der Besteller sowie weiteren von den Bestellern generierten Inhalten. <br> <br>
             (2) In Bezug auf die gesuchte oder angebotene Dienstleistung kommt der Vertrag ausschließlich zwischen den
@@ -332,32 +306,32 @@
             <b>§ 9 Datenschutz </b> <br> <br>
             (1) Sollten personenbezogene Daten (z.B. Name, Anschrift, E-Mail-Adresse) erhoben werden, verpflichten wir
             uns dazu, Ihr vorheriges Einverständnis einzuholen. Wir verpflichten uns dazu, keine Daten an Dritte
-            weiterzugeben, es sei denn, Sie haben zuvor eingewilligt. <br> <br> 
+            weiterzugeben, es sei denn, Sie haben zuvor eingewilligt. <br> <br>
             (2) Wir weisen darauf hin, dass die Ubertragung von Daten im Internet (z. B. per EMail) Sicherheitslücken
             aufweisen kann. Demnach kann ein fehlerfreier und störungsfreier Schutz der Daten
-            Dritter nicht vollständig gewährleistet werden. <br> <br> 
-            Diesbezüglich ist unsere Haftung ausgeschlossen. <br> <br> 
+            Dritter nicht vollständig gewährleistet werden. <br> <br>
+            Diesbezüglich ist unsere Haftung ausgeschlossen. <br> <br>
             (3) Dritte sind nicht dazu berechtigt, Kontaktdaten für gewerbliche Aktivitäten zu nutzen, sofern der
             Anbieter den
             betroffenen Personen vorher eine schriftliche
-            Einwilligung erteilt hat. <br> <br> 
+            Einwilligung erteilt hat. <br> <br>
             (4) Sie haben jederzeit das Recht, von Top Clean über den Sie betreffenden Datenbestand vollständig und
-            unentgeltlich Auskunft zu erhalten. <br> <br> 
+            unentgeltlich Auskunft zu erhalten. <br> <br>
             (5) Des Weiteren besteht ein Recht auf Berichtigung/Löschung von Daten/Einschränkung der Verarbeitung für
-            den Nutzer. <br> <br> 
-            <b>§ 10 Cookies </b> <br> <br> 
+            den Nutzer. <br> <br>
+            <b>§ 10 Cookies </b> <br> <br>
             (1) Zur Anzeige des Produktangebotes kann es vorkommen, dass wir Cookies einsetzen. Bei Cookies handelt es
             sich um kleine Textdateien, die lokal im Zwischenspeicher des Internet-Browsers des Seitenbesuchers
-            gespeichert werden. <br> <br> 
+            gespeichert werden. <br> <br>
             (2) Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte
-            CookieID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. <br> <br> 
+            CookieID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. <br> <br>
             Sie besteht aus einer Zeichenfolge, durch welche Internetseiten und Server dem konkreten Internetbrowser
             zugeordnet werden können, in dem das Cookie gespeichert wurde. Dies ermöglicht es den besuchten
             Internetseiten und Servern, den individuellen Browser der betroffenen Person von anderen Internetbrowsern,
             die
             andere Cookies enthalten, zu unterscheiden. Ein bestimmter Internetbrowser kann über die eindeutige
             Cookie-ID
-            wiedererkannt und identifiziert werden. <br> <br> 
+            wiedererkannt und identifiziert werden. <br> <br>
             (3) Durch den Einsatz von Cookies kann den Nutzern dieser Internetseite
             nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich waren.
             (4) Wir weisen Sie darauf hin, dass einige dieser Cookies von unserem Server auf Ihr Computersystem
@@ -367,19 +341,20 @@
             Festplatte gelöscht werden. Andere Cookies verbleiben auf Ihrem Computersystem und ermöglichen es uns, Ihr
             Computersystem bei Ihrem nächsten Besuch wieder zu erkennen (sog. dauerhafte Cookies).
             (5) Sie können der Speicherung von Cookies widersprechen, hierzu steht Ihnen ein Banner zu Verfügung dem
-            Sie widersprechen/annehmen können. <br> <br> 
+            Sie widersprechen/annehmen können. <br> <br>
             (6) Selbstverständlich können Sie Ihren Browser so einstellen, dass keine Cookies auf der Festplatte
             abgelegt
             werden bzw. bereits abgelegte Cookies wieder gelöscht werden. Die Anweisungen bezüglich der Verhinderung
-            sowie Löschung von Cookies können Sie der Hilfefunktion Ihres Browsers oder Softwareherstellers entnehmen. <br> <br> 
-            <b> § 11 Schlussbestimmungen</b> <br> <br> 
-            (1) Vertragssprache ist deutsch. <br> <br> 
-            (2) Wir bieten keine Produkte oder Dienstleistungen zum Kauf durch Minderjährige an. <br> <br> 
+            sowie Löschung von Cookies können Sie der Hilfefunktion Ihres Browsers oder Softwareherstellers entnehmen.
+            <br> <br>
+            <b> § 11 Schlussbestimmungen</b> <br> <br>
+            (1) Vertragssprache ist deutsch. <br> <br>
+            (2) Wir bieten keine Produkte oder Dienstleistungen zum Kauf durch Minderjährige an. <br> <br>
             Falls Sie unter 18 sind, dürfen Sie Top Clean nur unter Mitwirkung eines Elternteils oder
-            Erziehungsberechtigten nutzen. <br> <br> 
+            Erziehungsberechtigten nutzen. <br> <br>
             (3) Wenn Sie diese AGB verletzen und wir unternehmen hiergegen nichts, sind wir weiterhin berechtigt, von
             unseren Rechten bei jeder anderen Gelegenheit, in der Sie diese Verkaufsbedingungen verletzen, Gebrauch zu
-            machen. <br> <br> 
+            machen. <br> <br>
             (4) Wir behalten uns das Recht vor, Änderungen an unserer Webseite, Regelwerken, Bedingungen einschließlich
             dieser AGB jederzeit vorzunehmen. Auf Ihre Bestellung finden jeweils die Verkaufsbedingungen,
             Vertragsbedingungen und AGB-Anwendung, die zu dem Zeitpunkt Ihrer Bestellung in Kraft sind, es sei denn eine
@@ -387,8 +362,9 @@
             finden sie auch auf Bestellungen Anwendung, die Sie zuvor getätigt haben). Falls eine Regelung in diesen
             Verkaufsbedingungen unwirksam, nichtig oder aus irgendeinem Grund undurchsetzbar ist, gilt diese Regelung
             als
-            trennbar und beeinflusst die Gültigkeit und Durchsetzbarkeit der verbleibenden Regelungen nicht. <br> <br>  </p>
-        <p>By checking the box, you agree to the terms and conditions.</p>
+            trennbar und beeinflusst die Gültigkeit und Durchsetzbarkeit der verbleibenden Regelungen nicht. <br> <br>
+        </p>
+        
         <button onclick="closeTermsPopup()" class="closeBtn">Schliessen</button>
     </div>
 
@@ -434,28 +410,26 @@
         <div class="company-info">
             <h3>Top Clean</h3>
             <p>Firmensitz: Wien, Österreich </p>
-            <p>Tel. Nummer: 0664 75056744</p>
-            <p>Email: <a href="mailto:sharmatopclean@outlook.com">sharmatopclean@outlook.com</a></p>
+            <p>Steuernummer: 074541673 </p>
+            <p>Tel. Nummer: <a href="tel:+43664 75056744"></a>+43664 75056744</p>
+            <p>Email- <a href="mailto:info@topclean.at">info@topclean.at</a></p>
         </div>
-        
+
     </div>
     <footer>
         <p>Folgen Sie uns!</p>
         <div id="social" class="social-media">
-
-            <a href="https://www.instagram.com/jzsmeett" target="_blank" rel="noopener noreferrer">
-                <img src="resources/imgs/insta.png" alt="Instagram">
-            </a>
             <a href="https://wa.me/+4366475056744" target="_blank" rel="noopener noreferrer">
                 <img src="resources/imgs/whatsapp.png" alt="WhatsApp">
             </a>
         </div>
-        <p>&copy; 2024 Top Clean. Alle Rechte vorbehalten.</p>
-        <p>Icons von icons8 und Bilder von <a href="https://www.freepik.com/">Freepik</a> & <a href="https://www.unsplash.com/">Unsplash</a></p>
+        <p>&copy; 2024 Top Clean. Alle Rechte vorbehalten.</p> <p id="termsLink"><b>AGBs</b></p>
+        <p>Icons von icons8 und Bilder von <a href="https://www.freepik.com/">Freepik</a> & <a
+                href="https://www.unsplash.com/">Unsplash</a></p>
     </footer>
     <script>
         // Function to open terms and conditions popup
-        document.getElementById('termsLink').addEventListener('click', function() {
+        document.getElementById('termsLink').addEventListener('click', function () {
             document.getElementById('overlay').style.display = 'block';
             document.getElementById('termsPopup').style.display = 'block';
         });
@@ -466,7 +440,7 @@
             document.getElementById('termsPopup').style.display = 'none';
         }
 
-        
+
     </script>
 
 </body>
