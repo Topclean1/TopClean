@@ -9,8 +9,16 @@ body {
     padding: 0;
     overflow-x: hidden;
     text-decoration: none;
-}
+    text-align: center;
 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+}
 @media (min-width: 700px) {
 
     /* Styles for desktop screens */
@@ -200,6 +208,15 @@ body {
 
 
 
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgSmall{
+    width: 2.5em;
 }
 
 
@@ -550,9 +567,15 @@ h2 {
     border-radius: 10px;
     transition: 1s;
     height: 70px;
-    width: auto;
+    width: 70%;
     display: flex;
     align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content:space-around;
+    
+    
 }
 .emailBtn div{
     margin-right: 5px;
